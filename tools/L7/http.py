@@ -7,7 +7,7 @@ import requests
 from colorama import Fore as F
 from requests.exceptions import Timeout
 
-user_agents = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+user_agents = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 OPR/94.0.0.0'
 
 
 headers = {
@@ -15,6 +15,7 @@ headers = {
     "Connection": "keep-alive",
     "Pragma": "no-cache",
     "Cache-Control": "no-cache",
+    "origin": "https://www.google.com/",
     "referer": "https://www.google.com/",
     "Accept-Encoding": "gzip, deflate, br",
 }
